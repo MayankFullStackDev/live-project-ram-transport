@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background-color: #E67514;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            background-color: #E67514;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            margin-top: 3%;
+            text-decoration: none;
+        }
+
+        .header {
+            height: 12%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            top: 0;
+            background-color: #E67514;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        .left-side {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        span {
+            font-family: "Roboto", sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 26px;
+            color: #ffffff;
+        }
+
+        .right-side {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+            justify-content: space-evenly;
+        }
+
+        .heads {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 23px;
+            color: #ffffff;
+        }
+
+        /* SERVICE PAGE START */
+
+
+        .service-main {
+            background-color: #E67514;
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .box-main {
+            height: 100%;
+            width: 100%;
+            background-color: #E67514;
+        }
+
+        /* truck section css */
+
+        .truck-box {
+            height: 80%;
+            width: 100%;
+            background-color: #e2dfdf;
+            display: flex;
+        }
+
+        .right-box-truck {
+            height: 100%;
+            width: 40%;
+            background-color: #e2dfdf;
+        }
+
+        .truck-heading {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .truck-content {
+            font-size: 23px;
+            font-weight: 500;
+            text-align: justify;
+            margin-left: 80px;
+            font-family: "Roboto", sans-serif;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .left-box-truck {
+            height: 100%;
+            width: 60%;
+            background-color: #e2dfdf;
+        }
+
+        .truck-img {
+            height: 89%;
+            width: 77%;
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+
+
+        /* jcb css section */
+
+
+        .jcb-box {
+            height: 80%;
+            width: 100%;
+            background-color: #E67514;
+            display: flex;
+        }
+
+        .right-box-jcb {
+            height: 100%;
+            width: 60%;
+            background-color: #E67514;
+        }
+
+        .jcb-heading {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .jcb-content {
+            font-size: 23px;
+            font-weight: 500;
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 39px;
+            font-family: "Roboto", sans-serif;
+            box-shadow: rgba(32, 32, 32, 0.2) 3px 10px 30px;
+        }
+
+        .left-box-jcb {
+            height: 100%;
+            width: 40%;
+            background-color: #E67514;
+        }
+
+        .jcb-img {
+            height: 80%;
+            width: 80%;
+            margin-top: 6%;
+            margin-left: 10%;
+        }
+
+
+        /* Tractor section css */
+
+        .tractor-box {
+            height: 80%;
+            width: 100%;
+            background-color: #E67514;
+            display: flex;
+        }
+
+        .right-box-tractor {
+            height: 100%;
+            width: 40%;
+            background-color: #e2dfdf;
+        }
+
+        .tractor-heading {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .tractor-content {
+            font-size: 23px;
+            font-weight: 500;
+            text-align: justify;
+            margin-left: 90px;
+            font-family: "Roboto", sans-serif;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .left-box-tractor {
+            height: 100%;
+            width: 60%;
+            background-color: #e2dfdf;
+        }
+
+        .tractor-img {
+            height: 90%;
+            width: 70%;
+            margin-left: 14%;
+            margin-top: 5%;
+        }
+
+        /* card section start*/
+
+
+        .card-service {
+            width: 100%;
+            height: 60%;
+            background-color: #E67514;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 65%;
+        }
+
+        .card1 {
+            height: 300px;
+            width: 22%;
+            background-color: #ffffff;
+            margin-top: 5%;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 1px 57px 58px, rgba(0, 0, 0, 0.12) 1px -15px 34px, rgba(0, 0, 0, 0.12) 2px 6px 8px, rgba(0, 0, 0, 0.17) 2px 16px 17px, rgba(0, 0, 0, 0.09) 0px -6px 8px;
+        }
+
+        .card2 {
+            height: 300px;
+            width: 22%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin-top: 5%;
+            text-align: justify;
+            box-shadow: rgba(0, 0, 0, 0.25) 1px 57px 58px, rgba(0, 0, 0, 0.12) 1px -15px 34px, rgba(0, 0, 0, 0.12) 2px 6px 8px, rgba(0, 0, 0, 0.17) 2px 16px 17px, rgba(0, 0, 0, 0.09) 0px -6px 8px;
+        }
+
+
+        .card3 {
+            height: 300px;
+            width: 22%;
+            background-color: #ffffff;
+            margin-top: 5%;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 1px 57px 58px, rgba(0, 0, 0, 0.12) 1px -15px 34px, rgba(0, 0, 0, 0.12) 2px 6px 8px, rgba(0, 0, 0, 0.17) 2px 16px 17px, rgba(0, 0, 0, 0.09) 0px -6px 8px;
+        }
+
+
+        .card-content {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 10%;
+        }
+
+
+        /* hover efffect start----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+        .truck-img:hover {
+            transform: scale(1.09);
+            /* Slight zoom */
+        }
+
+        .jcb-img:hover {
+            transform: scale(1.09);
+            /* Slight zoom */
+        }
+
+        .tractor-img:hover {
+            transform: scale(1.09);
+            /* Slight zoom */
+        }
+
+
+
+        .card2:hover {
+            transform: scale(1.08);
+            /* Slight zoom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+        }
+
+        .card1:hover {
+            transform: scale(1.08);
+            /* Slight zoom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+        }
+
+        .card3:hover {
+            transform: scale(1.08);
+            /* Slight zoom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+        }
+
+        /* hover efffect end----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="left-side">
+            <img class="logo" src="./RamTransportImages/ram-tran-logo.jpg" />
+            <span>Ram Transport</span>
+        </div>
+        <div class="right-side">
+            <a href="./index.html"><span class="heads">Home</span></a>
+            <a href="./product.html"><span class="heads">Product</span></a>
+            <a href="./service.html"><span class="heads">Services</span></a>
+            <a href="./about.html"><span class="heads">About</span></a>
+            <a href="./contact.html"><span class="heads">Contact</span></a>
+        </div>
+    </div>
+
+
+    <!-- SERVICE SECTION  -->
+
+    <div class="service-main">
+
+        <div class="box-main">
+
+            <div class="truck-box">
+
+                <!-- TRUCK SERVICES -->
+
+                <div class="right-box-truck">
+                    <br /><br /><br /><br /><br /><br />
+                    <p class="truck-heading">
+                        WE HAVE !!
+                    </p>
+
+                    <p class="truck-content">
+                        Two 10 Wheeler truck & two 12 wheeler truck<br />
+                        we supply building material and also on the<br />
+                        reasnable price we have experienced driver’s<br />
+                        and staff
+                    </p>
+                </div>
+                <div class="left-box-truck">
+                    <img class="truck-img" src="./RamTransportImages/tatatruck_bj-removebg-preview.png"
+                        alt="Truck photo">
+                </div>
+            </div>
+
+            <!-- JCB SERVICES -->
+
+            <div class="jcb-box">
+                <div class="right-box-jcb">
+                    <img class="jcb-img" src="./RamTransportImages/ram jcb.png" alt="Jcb photo">
+
+                </div>
+                <div class="left-box-jcb">
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <p class="jcb-heading">
+                        WE HAVE !!
+                    </p>
+
+                    <p class="jcb-content">
+                        Three JCB Machine us give on rent on resnable price<br />
+                        charges taken by according to hours also we<br />
+                        have experienced and perfect operators who has experienced more than 19 years <br />
+                        xxalso a best helper
+                        us Complete work before the deadline
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tractor Section -->
+
+            <div class="tractor-box">
+                <div class="right-box-tractor">
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <p class="tractor-heading">
+                        WE HAVE !!
+                    </p>
+
+                    <p class="tractor-content">
+                        Six tractor us give it on the
+                        rent <br/>& use to transport building material also give
+                        it on the farm works <br/>& we have thressure machine Trolly & and all the equipment used in farm.<br/>
+                    </p>
+
+                </div>
+                <div class="left-box-tractor">
+                    <img class="tractor-img" src="./RamTransportImages/ram-tractor2-removebg-preview.png"
+                        alt="tractor photo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- card section -->
+    <div class="card-service">
+        <div class="card2">
+            <p class="card-content">
+                🏗️ Vehicles on Rent<br /><br />
+
+                We provide trucks and<br />
+                dumpers for rent<br />
+                with trained,<br />
+                professional operators.<br />
+            </p>
+        </div>
+
+        <div class="card1">
+            <p class="card-content">
+                🚛 On-Time Delivery<br /><br />
+
+                We value your time.<br />
+                That’s why we ensure<br />
+                quick and safe delivery<br />
+                to your construction site.<br />
+            </p>
+        </div>
+
+        <div class="card3">
+            <p class="card-content">
+                📦 Bulk Orders<br /><br />
+
+                Need a large quantity?<br />
+                We handle bulk orders<br />
+                for construction<br />
+                companies, contractors.<br />
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

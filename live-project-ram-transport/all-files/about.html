@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        /* about page css */
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #E67514;
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        .main {
+            height: 100%;
+            width: 100%;
+            background-color: #E67514;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .header {
+            height: 12%;
+            width: 100%;
+            background-color: #E67514;
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            top: 0;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        a {
+            margin-top: 3%;
+            text-decoration: none;
+        }
+
+
+        .left-side {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        span {
+            font-family: "Roboto", sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 26px;
+            color: #ffffff;
+        }
+
+        .right-side {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+            justify-content: space-evenly;
+        }
+
+        .heads {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 23px;
+            color: #ffffff;
+        }
+
+        .main-container-about {
+            height: 100%;
+            width: 100%;
+            background-color: #E67514;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-story {
+            height: 45%;
+            width: 100%;
+            background-color: #e2dfdf;
+            margin-top: 5.5%;
+        }
+
+        .about-heading {
+            font-size: 44px;
+            text-align: start;
+            color: #000000;
+            margin-left: 30px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        .about-content {
+            font-size: 23px;
+            font-weight: 700;
+            text-align: justify;
+            margin-left: 120px;
+            font-family: "Roboto", sans-serif;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            color: #000000;
+            margin-top: 0px;
+        }
+
+        b {
+            color: #000000;
+            font-size: 24px;
+        }
+
+        .about-card {
+            height: 100%;
+            width: 100%;
+            background-color: #E67514;
+            align-self: center;
+            align-content: center;
+        }
+
+        .upper-card-about {
+            height: 40%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 13%;
+
+        }
+
+        .lower-card-about {
+            height: 40%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 4%;
+            align-self: center;
+            align-content: center;
+            margin-left: 13%;
+        }
+
+        .about-card-one {
+            height: 100%;
+            width: 40%;
+            background-color: #ffffff;
+            border-radius: 12px;
+            align-self: center;
+            align-content: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 5px 10px 10px, rgba(0, 0, 0, 0.23) 5px 12px 14px;
+        }
+
+        .about-card-button {
+            height: 40px;
+            width: 290px;
+            background-color: #E67514;
+            color: #000000;
+            font-size: 20px;
+            font-weight: 600;
+            margin-left: 17%;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            border-radius: 10px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        }
+
+        .about-card-one-heading {
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            color: #000000;
+            font-size: 30px;
+            font-family: "Roboto", sans-serif;
+            color: #000000;
+            margin-top: 0px;
+
+        }
+
+        .about-card-one-content {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            color: #000000;
+            font-size: 23px;
+            font-weight: 700;
+            text-align: justify;
+            margin-left: 120px;
+            font-family: "Roboto", sans-serif;
+            margin-top: 0px;
+        }
+
+        .about-offer {
+            height: 50%;
+            width: 100%;
+            background-color: #E67514;
+            color: #000000;
+        }
+
+        .about-offer-heading {
+            text-align: start;
+            color: #000000;
+            margin-left: 30px;
+            font-size: 43px;
+            font-weight: 700;
+            text-align: justify;
+            margin-left: 120px;
+            font-family: "Roboto", sans-serif;
+            margin-top: 40px;
+        }
+
+        .offer-chooce-con {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .choose-left {
+            margin-left: 5%;
+        }
+
+        .choose-right {
+            margin-left: 5%;
+        }
+
+        .about-choose-content {
+            text-align: start;
+            color: #000000;
+            margin-left: 30px;
+            font-size: 23px;
+            font-weight: 700;
+            text-align: justify;
+            margin-left: 120px;
+            font-family: "Roboto", sans-serif;
+            margin-top: 40px;
+        }
+
+        .review-main {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 730px;
+            width: 100%;
+            gap: 20px;
+            margin-bottom: 20%;
+            background-color: #e2dfdf;
+        }
+
+        .review-card-one {
+            height: 100%;
+            width: 30%;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 2px 2px black;
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            padding: 10px;
+        }
+
+        .review-content-card {
+            font-size: 20px;
+            color: #000000;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .review-content-card-start {
+            text-align: center;
+        }
+
+        .review-content-card-name {
+            font-size: 20px;
+            margin-left: 39%;
+        }
+
+        .upper-review {
+            display: flex;
+            height: 300px;
+            width: 1300px;
+            gap: 30px;
+            margin-left: 120px;
+            margin-top: 0;
+        }
+
+        .lover-review {
+            display: flex;
+            height: 300px;
+            width: 1300px;
+            gap: 40px;
+            margin-left: 120px;
+            margin-top: 20px;
+        }
+
+
+        /* hover effect start---------------------------------------------------------------------------- */
+        .about-card-one:hover {
+            transform: scale(1.08);
+            /* Slight zoom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+        }
+
+
+        .review-card-one:hover {
+            transform: scale(1.08);
+            /* Slight zoom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+        }
+
+        /* hover effect end------------------------------------------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="left-side">
+                <img class="logo" src="./RamTransportImages/ram-tran-logo.jpg" />
+                <span>Ram Transport</span>
+            </div>
+            <div class="right-side">
+                <a href="./index.html"><span class="heads">Home</span></a>
+                <a href="./product.html"><span class="heads">Product</span></a>
+                <a href="./service.html"><span class="heads">Services</span></a>
+                <a href="./about.html"><span class="heads">About</span></a>
+                <a href="./contact.html"><span class="heads">Contact</span></a>
+            </div>
+        </div>
+        <div class="main-container-about">
+
+            <div class="about-story"><br /><br />
+                <span class="about-heading">Our Story</span><br /><br />
+                <p class="about-content">
+                    We started our work in 1999, founded by two brothers —<b> Shivaji Devhre and Mangesh Devhare.
+                    </b><br />
+                    We have more than 25 years of experience in this field.<br />
+                    We supply building materials on time and give our vehicles on rent for different uses <br />
+                    at a reasonable price. We come from a clear background and keep our own fixed prices.<br />
+                    We always try to give good quality and timely service to our customers.
+
+                </p>
+            </div>
+            <div class="about-card">
+                <p class="about-heading"> What we Offer</p>
+
+                <div class="upper-card-about">
+                    <div class="about-card-one">
+                        <p class="about-card-one-heading">
+                            Goverment<br />
+                            Tenders
+                        </p>
+                        <p class="about-card-one-content">
+                            Approved contractor,<br />
+                            for public <br />
+                            infrastucture
+                        </p>
+                        <a href="./goverment-tender.html"> <button class="about-card-button">View More</button></a>
+                    </div>
+                    <div class="about-card-one">
+                        <p class="about-card-one-heading">
+                            Material Supplied <br />
+                            to local’s
+                        </p>
+                        <p class="about-card-one-content">
+                            Best quality material to <br />
+                            the local public<br />
+                            In resnable price
+                        </p>
+                        <a href="./local-public-material-supply.html"><button class="about-card-button">View
+                                More</button></a>
+                    </div>
+                </div>
+                <div class="lower-card-about">
+                    <div class="about-card-one">
+                        <p class="about-card-one-heading">
+                            Full Material<br />
+                            supply
+                        </p>
+                        <p class="about-card-one-content">
+                            Sand, Bricks <br />
+                            Stone, Agrigate<br />
+                            Cement, Steel<br />
+                        </p>
+
+                        </p>
+                        <a href="./full-material-supply.html"><button class="about-card-button">View More</button></a>
+                    </div>
+                    <div class="about-card-one">
+                        <p class="about-card-one-heading">
+                            Transport &<br />
+                            Logistics
+                        </p>
+                        <p class="about-card-one-content">
+                            Heave-quty bulk<br />
+                            delivery and<br /> solutions
+                        </p>
+                        <a href="./transport-logistic.html"> <button class="about-card-button">View More</button></a>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <div class="about-offer">
+                <p class="about-offer-heading">Why Choose Us</p>
+                <div class="offer-chooce-con">
+                    <div class="choose-left">
+                        <span class="about-choose-content">
+                            ✔ Good Quality materials
+                            on rensnable price<br />
+                        </span>
+                        <br /><br />
+                        <span class="about-choose-content">
+                            ✔ Experice more than 25
+                            years<br />
+                        </span>
+                        <br /><br />
+                        <span class="about-choose-content">
+                            ✔ Public figure persnality
+                            in our rular area <br />
+                        </span>
+
+
+                    </div>
+                    <div class="choose-right">
+                        <span class="about-choose-content">
+                            ✔ Delivered on the
+                            time <br />
+                        </span>
+                        <br /><br />
+                        <span class="about-choose-content">
+                            ✔ Give’s best service <br />
+
+                        </span>
+                        <br /><br />
+                        <span class="about-choose-content">
+                            ✔ All materials avalaible <br />
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- review section -->
+            <div class="review-main">
+
+                <div class="upper-review">
+                    <div class="review-card-one">
+                        <span class="review-content-card">
+                            "We've been getting our building materials from this supplier for a while now, and the
+                            service is always reliable. The materials are of good quality, delivered on time, and the
+                            prices are reasonable. Their team is professional and helpful. Highly recommended for any
+                            construction needs."<br />
+                            <p class="review-content-card-start"> ⭐⭐⭐⭐⭐</p>
+                            <p class="review-content-card-name">-Mayank Kharbade</p>
+                        </span>
+                    </div>
+                    <div class="review-card-one">
+                        <span class="review-content-card">
+                            “Very good supplier for building materials. I received everything on time and in good
+                            condition. The staff was polite and helpful. I will order again for my next
+                            project.I ordered bricks and gravel from them. Everything was delivered safely and
+                            quickly. The rates are better than others in the market. ”
+                            <p class="review-content-card-start">⭐⭐⭐⭐</p>
+                            <p class="review-content-card-name">-Bhushan jatgade</p>
+                        </span>
+                    </div>
+                    <div class="review-card-one">
+                        <span class="review-content-card">
+                            “Affordable prices and fast delivery. I got sand, stone, and cement for my site
+                            without any issues. Trustworthy service. Perfect for small and big construction work. They
+                            gave me everything I needed without delay. Very supportive staff. They care about customer
+                            needs. I changed my order last minute”
+                            <p class="review-content-card-start">⭐⭐⭐⭐</p>
+                            <p class="review-content-card-name">-Ashish Naik</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="lover-review">
+                    <div class="review-card-one">
+                        <span class="review-content-card">
+                            “They have a wide range of materials and all are of good quality. I’m happy with the support
+                            and quick response. Good for builders and contractors. Very helpful service. They guided me
+                            on which materials to use for my home project. Delivery was fast and smooth”
+                            <p class="review-content-card-start">⭐⭐⭐⭐⭐ </p>
+                            <p class="review-content-card-name">-Ayush Lolusare</p>
+                        </span>
+                    </div>
+                    <div class="review-card-one">
+                        <span class="review-content-card">
+                            “This company helped me a lot during my house construction. Trucks came on time, and the
+                            drivers were experienced. Great experience overall. Ordered multiple times and always got
+                            the best service. Trucks are in good condition and drivers are professional”
+                            <p class="review-content-card-start">⭐⭐⭐⭐⭐ </p>
+                            <p class="review-content-card-name">-Shantnu Raut</p>
+                        </span>
+                    </div>
+                    <div class="review-card-one">
+                        <span class="review-content-card">
+                            “Reliable and professional team. They understand what we need and deliver on time. No
+                            delays, no complaints. Highly recommend them for any building work. I needed urgent material
+                            for a project. They arranged everything within a few hours. Really thankful for their quick
+                            action.”
+                            <p class="review-content-card-start">⭐⭐⭐⭐⭐ </p>
+                            <p class="review-content-card-name">-Shailu Thakur</p>
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+</body>
+
+</html>

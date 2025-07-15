@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ram Transport</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    /* Base reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background: #fff;
+      color: #000;
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e67514;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .left-side {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .right-side {
+      display: flex;
+      gap: 15px;
+    }
+
+    .right-side a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .body {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .content-two {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .order_button,
+    .view_button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #e67514;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .card button {
+      background-color: #e67514;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .service-main,
+    .main-container-about,
+    .main-contact {
+      padding: 20px;
+    }
+
+    .truck-box,
+    .jcb-box,
+    .tractor-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .right-box-truck,
+    .right-box-jcb,
+    .right-box-tractor,
+    .left-box-truck,
+    .left-box-jcb,
+    .left-box-tractor {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .truck-img,
+    .jcb-img,
+    .tractor-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card-service {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+      width: 300px;
+    }
+
+    .about-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .about-card-one {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .review-main {
+      padding: 20px;
+    }
+
+    .upper-review,
+    .lover-review {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .review-card-one {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 5px;
+      background: #f1f1f1;
+    }
+
+    .contact-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .left-contact,
+    .right-contact {
+      flex: 1 1 300px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+    /* Responsive Toggle */
+    .menu-toggle {
+      display: none;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .right-side {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #e67514;
+      }
+
+      .right-side a {
+        padding: 10px;
+        border-top: 1px solid white;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="header">
+      <div class="left-side">
+        <img class="logo" src="./ramTransportImages/ram-tran-logo.jpg" />
+        <span style="color:white;font-weight:bold;font-size:20px">Ram Transport</span>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="right-side">
+        <a href="./index.html"><span class="heads">Home</span></a>
+        <a href="./product.html"><span class="heads">Product</span></a>
+        <a href="./service.html"><span class="heads">Services</span></a>
+        <a href="./about.html"><span class="heads">About</span></a>
+        <a href="./contact.html"><span class="heads">Contact</span></a>
+      </div>
+    </div>
+
+    <!-- Your full website content goes here (already shared above) -->
+
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.right-side');
+      menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+    }
+  </script>
+</body>
+
+</html>

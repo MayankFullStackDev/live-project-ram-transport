@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            background-color: #c9c4c4;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            background-color: #c9c4c4;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .header {
+            height: 12%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            position: fixed;
+            top: 0;
+            background-color: #E67514;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        a {
+            margin-top: 3%;
+            text-decoration: none;
+        }
+
+
+        .left-side {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        span {
+            font-family: "Roboto", sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 26px;
+            color: #ffffff;
+        }
+
+        .right-side {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+            justify-content: space-evenly;
+        }
+
+        .heads {
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 23px;
+            color: #ffffff;
+        }
+
+        .maiCon {
+            height: 900px;
+            width: 100%;
+            background-color: #c9c4c4;
+            display: flex;
+            margin-top: 8%;
+        }
+
+        .product-container {
+            height: 80%;
+            width: 100%;
+            background-color: #c9c4c4;
+        }
+
+        .cards-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .card {
+            height: 60%;
+            width: 26%;
+            background-color: #c9c4c4;
+            border-radius: 7px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        img {
+            width: 100%;
+            height: 72%;
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        button {
+            font-size: 22px;
+            height: 45px;
+            width: 300px;
+            border-radius: 10px;
+            font-weight: 300;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            border: none;
+            margin-top: 17px;
+            background-color: #ffffff;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+
+        /* hover effect....................................................................................................... */
+        .card:hover {
+            transform: scale(1.08);
+            /* Slight zoom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+        }
+
+        /* hover efffect end-------------------------------------------------------------------------------------------------------------- */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="left-side">
+                <img class="logo" src="./RamTransportImages/ram-tran-logo.jpg" />
+                <span>Ram Transport</span>
+            </div>
+            <div class="right-side">
+                <a href="./index.html"><span class="heads">Home</span></a>
+                <a href="./product.html"><span class="heads">Product</span></a>
+                <a href="./service.html"><span class="heads">Services</span></a>
+                <a href="./about.html"><span class="heads">About</span></a>
+                <a href="./contact.html"><span class="heads">Contact</span></a>
+            </div>
+        </div>
+        <div class="maiCon">
+
+            <div class="product-container">
+                <div class="cards-group">
+                    <div class="card">
+                        <img src="./RamTransportImages/ram-transport-cement.webp" alt="Cement image">
+
+                        <p>Cement<br />
+                            <a href="./contact.html"><button>Order Now</button></a>
+                        </p>
+
+
+                    </div>
+                    <div class="card">
+                        <img src="./RamTransportImages/ram-transport-iron.jpeg" alt="Steel Iron">
+                        <p>Steel Iron <br />
+                          <a href="./contact.html"><button>Order Now</button></a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./RamTransportImages/ram-transport-bricks.jpg" alt="Bricks">
+
+                        <p>Sand <br />
+                            <a href="./contact.html"><button>Order Now</button></a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./RamTransportImages/ram-tar.jpg" alt="Stone">
+                        <p>Aggregates <br />
+                            <a href="./contact.html"><button>Order Now</button></a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./RamTransportImages/ram-tra2.jpg" alt="Sand">
+                        <p>Bricks <br />
+                           <a href="./contact.html"><button>Order Now</button></a>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./RamTransportImages/ram-tar4.jpg" alt="Agrigate">
+                        <p>Stone <br />
+                            <a href="./contact.html"><button>Order Now</button></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
