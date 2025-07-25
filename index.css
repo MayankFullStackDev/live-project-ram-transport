@@ -56,10 +56,33 @@ a {
   text-decoration: none;
 }
 
-.heads {
+.heads-one {
+  position: relative;
+  display: inline-block;
   color: white;
-  font-size: 18px;
+  transition: color 0.3s ease;
   font-weight: 600;
+  font-size: 18px;
+}
+
+.heads-one::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.heads-one:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.heads-one:hover::after {
+  width: 100%;
 }
 
 /* TOGGLE (MOBILE) */
@@ -87,20 +110,20 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .content {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
   color: white;
 }
 
 .content-two {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: white;
   margin-top: 10px;
@@ -618,6 +641,7 @@ button:hover {
 
 .left-contact {
   width: 100%;
+  margin-top: 40px;
 }
 
 .right-contact {
@@ -717,4 +741,31 @@ iframe {
   .whatsapp-box {
     margin-left: 10px;
   }
+}
+
+.contact-one {
+  height: 25%;
+  width: 70%;
+  background-color: #e28229;
+  border-radius: 10px;
+  border-left: #e28229;
+  border-width: 20px;
+}
+.contact-one1 {
+  height: 100%;
+  width: 99%;
+  background-color: #e5e0e0;
+  border-radius: 10px;
+  border-width: 20px;
+}
+.contact-one2 {
+  height: 23%;
+  width: 70%;
+  background-color: #e28229;
+  border-radius: 10px;
+  border-left: #e28229;
+  border-width: 20px;
+  margin-left: 3%;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
