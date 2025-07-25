@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Page</title>
-  <link rel="icon" href="../images/ram-tran-logo.jpg" style="height: 50px; width: 50px; border-radius:50%;" >
+  <link rel="icon" href="../images/ram-tran-logo.jpg" style="height: 50px; width: 50px; border-radius:50%;">
   <style>
     * {
       box-sizing: border-box;
@@ -24,16 +24,16 @@
 
     .header {
       width: 100%;
-      height: 80px;
-      background-color: #E67514;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 0 20px;
+      align-items: center;
+      background-color: #e67514;
       position: fixed;
       top: 0;
+      left: 0;
+      padding: 10px 20px;
       z-index: 1000;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      box-shadow: rgba(6, 5, 5, 0.25) 0px 6px 12px -2px,
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
 
@@ -46,7 +46,7 @@
       height: 60px;
       width: 60px;
       border-radius: 50%;
-      margin-right: 15px;
+      margin-right: 10px;
     }
 
     .left-side span {
@@ -146,6 +146,26 @@
       color: white;
     }
 
+   .heads::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -3px;
+      background-color: #fff;
+      transition: width 0.3s ease;
+    }
+
+    .heads:hover {
+      color: #000;
+      cursor: pointer;
+    }
+
+    .heads-one:hover::after {
+      width: 100%;
+    }
+
     /* Media Queries */
     @media (max-width: 1024px) {
       .card {
@@ -203,11 +223,11 @@
 
       <!-- Navigation -->
       <div class="right-side" id="menu">
-        <a href="../../index.html">Home</a>
-        <a href="./product.html">Product</a>
-        <a href="./services.html">Services</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
+         <a href="../../index.html"><span class="heads">Home</span></a>
+        <a href="./product.html"><span class="heads">Product</span></a>
+        <a href="./services.html"><span class="heads">Services</span></a>
+        <a href="./about.html"><span class="heads">About</span></a>
+        <a href="./contact.html"><span class="heads">Contact</span></a>
       </div>
     </div>
 
